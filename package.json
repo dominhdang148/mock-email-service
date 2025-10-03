@@ -1,0 +1,33 @@
+{
+  "name": "email-service",
+  "version": "1.0.0",
+  "description": "A simple service that able to send emails",
+  "main": "index.js",
+  "author": "dominhdang148",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node index.js",
+    "prepare": "husky",
+    "lint": "eslint .",
+    "format": "prettier --check ."
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^20.1.0",
+    "@commitlint/config-conventional": "^20.0.0",
+    "eslint": "^9.36.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.3",
+    "prettier": "^3.6.2"
+  }
+}
