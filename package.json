@@ -5,10 +5,12 @@
   "main": "index.js",
   "author": "dominhdang148",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "dev": "node index.js",
     "prepare": "husky",
     "lint": "eslint .",
+    "lint:fix": "eslint --fix",
     "format": "prettier --check ."
   },
   "lint-staged": {
@@ -18,7 +20,9 @@
     ]
   },
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^20.1.0",
